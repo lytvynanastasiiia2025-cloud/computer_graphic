@@ -43,7 +43,7 @@ def hit_sphere(center, radius, ray_origin, ray_dir):
     return (-b - math.sqrt(discriminant)) / (2.0 * a)
     oc = ray_origin - center
     
-    # Квадратне рівняння: at^2 + bt + c = 0
+    # at^2 + bt + c = 0
     a = dot(ray_dir, ray_dir)
     b = 2.0 * dot(oc, ray_dir)
     c = dot(oc, oc) - radius * radius
